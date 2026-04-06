@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
     <title>Memory Palace Review</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap"
@@ -547,6 +547,91 @@
           max-width: 160px;
         }
       }
+
+      /* 🔥 ULTRA LOW RES MODE (for 320x180) */
+@media (max-width: 400px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  .header {
+    height: auto;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
+  .logo {
+    font-size: 10px;
+  }
+
+  .search-wrap {
+    max-width: 100px;
+  }
+
+  .search-input {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .stats-bar {
+    gap: 6px;
+  }
+
+  .stat-value {
+    font-size: 10px;
+  }
+
+  .stat-label {
+    font-size: 6px;
+  }
+
+  .main {
+    padding: 8px;
+  }
+
+  .card {
+    grid-template-columns: 20px 1fr;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .card-title {
+    font-size: 10px;
+  }
+
+  .meta-item {
+    font-size: 7px;
+  }
+
+  .priority-badge {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .tl-btn {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tl-btn::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .legend {
+    display: none; /* remove heavy UI */
+  }
+
+  .filter-row {
+    gap: 4px;
+  }
+
+  .filter-btn {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+}
     </style>
   </head>
   <body>
